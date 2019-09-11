@@ -118,14 +118,12 @@ class _HomeState extends State<Home> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          Center(
-            child: Padding(
-            padding: EdgeInsets.all(50),
-            child: Image.network(
-                  ImageHGFinance,
+          Padding(
+            padding: EdgeInsets.fromLTRB(100, 50, 100, 50),
+            child: Image.asset(
+                  'imgs/1.png',
                   fit: BoxFit.fill,
-                ),
-            ),
+                  ),
           ),
           FutureBuilder<Map>(
             future: getDados(),
